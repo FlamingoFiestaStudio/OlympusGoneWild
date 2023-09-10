@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://drbut2arpvesd"]
+
+[node name="World" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 333.0
+offset_top = 2.0
+offset_right = 722.0
+offset_bottom = 117.0
+text = "New World"
+horizontal_alignment = 1
+vertical_alignment = 1
