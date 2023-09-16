@@ -1,16 +1,16 @@
 [gd_scene load_steps=14 format=3 uid="uid://ey7qekfsbkai"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_oadh2"]
-[ext_resource type="Texture2D" uid="uid://dgx1fa7be25yv" path="res://Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-1.png" id="2_fe0oi"]
-[ext_resource type="Texture2D" uid="uid://bk2uloevvydaw" path="res://Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-2.png" id="3_wkmw0"]
-[ext_resource type="Texture2D" uid="uid://cdf2cbe6ew0hy" path="res://Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-3.png" id="4_xs7wo"]
-[ext_resource type="Texture2D" uid="uid://dqtbf2c0jp6gx" path="res://Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-4.png" id="5_pmcv1"]
-[ext_resource type="Texture2D" uid="uid://sg8ov3rbe46e" path="res://Sunny-land-assets-files/PNG/sprites/player/run/player-run-1.png" id="6_jr1x8"]
-[ext_resource type="Texture2D" uid="uid://c2l1di7xnif5o" path="res://Sunny-land-assets-files/PNG/sprites/player/run/player-run-2.png" id="7_emstq"]
-[ext_resource type="Texture2D" uid="uid://dfg2a3i50v5wf" path="res://Sunny-land-assets-files/PNG/sprites/player/run/player-run-3.png" id="8_5rh2t"]
-[ext_resource type="Texture2D" uid="uid://be7nr3dibof6v" path="res://Sunny-land-assets-files/PNG/sprites/player/run/player-run-4.png" id="9_oi5fv"]
-[ext_resource type="Texture2D" uid="uid://bxmfmgilmmbdb" path="res://Sunny-land-assets-files/PNG/sprites/player/run/player-run-5.png" id="10_svrvj"]
-[ext_resource type="Texture2D" uid="uid://csenw0x4vfg0d" path="res://Sunny-land-assets-files/PNG/sprites/player/run/player-run-6.png" id="11_fmhe5"]
+[ext_resource type="Texture2D" uid="uid://dgx1fa7be25yv" path="res://Player/player sprits/idle/player-idle-1.png" id="2_dqtrk"]
+[ext_resource type="Texture2D" uid="uid://bk2uloevvydaw" path="res://Player/player sprits/idle/player-idle-2.png" id="3_tfsvx"]
+[ext_resource type="Texture2D" uid="uid://cdf2cbe6ew0hy" path="res://Player/player sprits/idle/player-idle-3.png" id="4_cto3h"]
+[ext_resource type="Texture2D" uid="uid://dqtbf2c0jp6gx" path="res://Player/player sprits/idle/player-idle-4.png" id="5_b8sga"]
+[ext_resource type="Texture2D" uid="uid://sg8ov3rbe46e" path="res://Player/player sprits/run/player-run-1.png" id="6_jrxga"]
+[ext_resource type="Texture2D" uid="uid://c2l1di7xnif5o" path="res://Player/player sprits/run/player-run-2.png" id="7_yuaed"]
+[ext_resource type="Texture2D" uid="uid://dfg2a3i50v5wf" path="res://Player/player sprits/run/player-run-3.png" id="8_4heg6"]
+[ext_resource type="Texture2D" uid="uid://be7nr3dibof6v" path="res://Player/player sprits/run/player-run-4.png" id="9_nyn5a"]
+[ext_resource type="Texture2D" uid="uid://bxmfmgilmmbdb" path="res://Player/player sprits/run/player-run-5.png" id="10_ptkg4"]
+[ext_resource type="Texture2D" uid="uid://csenw0x4vfg0d" path="res://Player/player sprits/run/player-run-6.png" id="11_41dtl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ufsgy"]
 radius = 23.0
@@ -20,16 +20,16 @@ height = 92.0
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_fe0oi")
+"texture": ExtResource("2_dqtrk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_wkmw0")
+"texture": ExtResource("3_tfsvx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_xs7wo")
+"texture": ExtResource("4_cto3h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_pmcv1")
+"texture": ExtResource("5_b8sga")
 }],
 "loop": true,
 "name": &"Idle",
@@ -37,22 +37,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_jr1x8")
+"texture": ExtResource("6_jrxga")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_emstq")
+"texture": ExtResource("7_yuaed")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_5rh2t")
+"texture": ExtResource("8_4heg6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_oi5fv")
+"texture": ExtResource("9_nyn5a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_svrvj")
+"texture": ExtResource("10_ptkg4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_fmhe5")
+"texture": ExtResource("11_41dtl")
 }],
 "loop": true,
 "name": &"Running",
@@ -70,4 +70,4 @@ shape = SubResource("CapsuleShape2D_ufsgy")
 position = Vector2(161, 54)
 scale = Vector2(2.86364, 3.1875)
 sprite_frames = SubResource("SpriteFrames_lrt3t")
-animation = &"Running"
+animation = &"Idle"

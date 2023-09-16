@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-var speed = 200
+const speed = 200
 @onready var anim = get_node("AnimatedSprite2D")
 
 func _ready():
