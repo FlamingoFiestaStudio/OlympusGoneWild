@@ -8,7 +8,7 @@ Olympus Gone Wild is an open source game based on games like Vampire Survivors, 
 
 This project arises from the team's desire to develop a complete project in order to acquire and solidify knowledge in the area of game/software development and teamwork.
 
-## Main Technical Team:
+## Main Technical Team
 
 - [Adan Oliveira](https://github.com/Adan0k) (Developer);
 - [Flávio Silva](https://github.com/201flaviosilva) (Developer);
