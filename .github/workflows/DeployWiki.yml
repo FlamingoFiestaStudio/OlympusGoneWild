@@ -1,0 +1,26 @@
+# https://github.com/marketplace/actions/github-wiki-action
+name: Deploy Wiki
+
+on:
+  push:
+    paths:
+      # Trigger only when wiki directory changes
+      - "wiki/**"
+    branches:
+      # And only on main branch
+      - main
+
+jobs:
+  deploy-wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Push Wiki Changes
+        uses: Andrew-Chen-Wang/github-wiki-action@v3
+        env:
+          WIKI_DIR: wiki/ # WIKI_DIR's default is wiki/ - Make sure you have that / at the end. We use rsync
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_MAIL: ${{ github.event.pusher.email }}
+          GH_NAME: ${{ github.repository_owner }}
+          EXCLUDED_FILES: "_ignore/"
