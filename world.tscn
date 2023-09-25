@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://drbut2arpvesd"]
+[gd_scene load_steps=2 format=3 uid="uid://drbut2arpvesd"]
+
+[ext_resource type="PackedScene" uid="uid://ey7qekfsbkai" path="res://Player/Player.tscn" id="1_yqpfw"]
 
 [node name="World" type="Node2D"]
 
@@ -10,3 +12,6 @@ offset_bottom = 117.0
 text = "New World"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Player" parent="." instance=ExtResource("1_yqpfw")]
+position = Vector2(346, 255)
