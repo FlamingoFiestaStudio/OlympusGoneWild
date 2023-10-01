@@ -21,4 +21,5 @@ func _on_resume_button_pressed():
 	game_paused = false
 
 func _on_quit_button_pressed():
+	game_paused = false
 	get_tree().change_scene_to_file("res://menus/menu.tscn")
