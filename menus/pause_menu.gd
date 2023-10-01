@@ -1,28 +1,24 @@
 extends Control
 
-var game_paused : bool = false:
-	get:
-		return game_paused
-	set(value):
-		game_paused = value
-		get_tree().paused = game_paused
-		_update_visibility()
+var game_paused : bool = false : get = _get_game_paused, set = _set_game_paused
 
 func _ready():
 	hide()
+
+func _get_game_paused():
+	return game_paused
+	
+func _set_game_paused(new_state: bool):
+	game_paused = new_state
+	get_tree().paused = game_paused
+	show() if game_paused else hide()
 
 func _input(event : InputEvent):
 	if(event.is_action_pressed("ui_cancel")):
 		game_paused = !game_paused
 
-func _update_visibility():
-	if game_paused:
-		show()
-	else:
-		hide()
-
-func _on_quit_button_pressed():
-	get_tree().quit()
-
 func _on_resume_button_pressed():
 	game_paused = false
+
+func _on_quit_button_pressed():
+	get_tree().change_scene_to_file("res://menus/menu.tscn")
