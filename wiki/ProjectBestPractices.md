@@ -13,7 +13,7 @@ This page will guide you through setting up the project, provide information on 
 
 ## Branch Naming Convention
 
-The branch should have the number of the issue and the title of the issue. For example: `123-my-issue-title`.
+The branch should have the number of the issue and the title of the issue separated by `-` . For example: `123-my-issue-title`.
 
 To simplify, you could just click here on the issue page, and this will do the magic for you:
 
