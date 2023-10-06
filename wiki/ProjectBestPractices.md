@@ -69,7 +69,7 @@ When you submit a PR, someone will review your code:
 - If that person leaves some comments:
     - If you agree, change what the reviewers said, and notify the person after push;
     - If you do not agree, be nice and explain why do you not think in the same way;
-    - The comments should be only closed by the person who left the comment;
+    - The comments should be only closed by the person who left the comment, (unless the discussion has been stopped for more than a week);
 
 ## Priority Labels
 
