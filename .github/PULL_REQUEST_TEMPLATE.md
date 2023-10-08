@@ -6,7 +6,7 @@
 
 ### Image/Video
 
-[If applicable, include an image/gif/video to help illustrate the changes.]
+<!--- If applicable, include an image/gif/video to help illustrate the changes.  -->
 
 ### Related Issue
 
@@ -28,7 +28,7 @@
 
 Before submitting this pull request, please ensure the following are completed:
 
-- [ ] [My commits follow the project conventions](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692).
+- [ ] [My commits follow the project conventions](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/wiki/ProjectBestPractices#commit-message-convections).
 - [ ] My code follows the project's coding style and conventions.
 - [ ] I have updated the project documentation (if necessary).
 - [ ] My code makes sense with the design.
