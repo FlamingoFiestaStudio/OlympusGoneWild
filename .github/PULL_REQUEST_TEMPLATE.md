@@ -1,8 +1,9 @@
+<!-- Read this before open de PR: https://github.com/FlamingoFiestaStudio/OlympusGoneWild/wiki/ProjectBestPractices#pull-requests -->
+
 ### Description
 
-**Describe the purpose of this pull request.**
-
-<!-- Provide a brief summary of the changes and why they are being made. -->
+<!-- Describe the purpose of this pull request.
+Provide a brief summary of the changes and why they are being made. -->
 
 ### Image/Video
 
@@ -15,7 +16,8 @@
 ### Does this PR introduce a breaking change? ⚠️
 
 - [ ] No
-- [ ] Yes <!-- ::WARNING:: If your PR has a breaking change, your commit body message MUST include "BREAKING CHANGE"   -->
+- [ ] Yes <!-- ::WARNING:: If your PR has a breaking change, your commit body message MUST include "BREAKING CHANGE" -->
+- [ ] 
 <!-- If this PR contains a breaking change, please describe the impact. -->
 
 ### Tests
