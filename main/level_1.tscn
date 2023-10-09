@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://drbut2arpvesd"]
 
 [ext_resource type="Script" path="res://main/level_1.gd" id="1_d3jfb"]
-[ext_resource type="PackedScene" uid="uid://ey7qekfsbkai" path="res://player/Player.tscn" id="1_lqipx"]
+[ext_resource type="PackedScene" uid="uid://ey7qekfsbkai" path="res://Player/Player.tscn" id="1_lqipx"]
 [ext_resource type="PackedScene" uid="uid://xltm3j142qwi" path="res://menus/pause_menu.tscn" id="3_sns4i"]
 
 [node name="level1" type="Node2D"]
@@ -17,3 +17,10 @@ offset_left = 586.0
 offset_top = 326.0
 offset_right = 586.0
 offset_bottom = 326.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 316.0
+offset_top = 35.0
+offset_right = 569.0
+offset_bottom = 90.0
+text = "XXXXXXXXX"
