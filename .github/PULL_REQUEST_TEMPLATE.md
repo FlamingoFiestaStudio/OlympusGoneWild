@@ -1,13 +1,15 @@
-<!-- Read this before open de PR: https://github.com/FlamingoFiestaStudio/OlympusGoneWild/wiki/ProjectBestPractices#pull-requests -->
+<!-- Read this before opening de PR: https://github.com/FlamingoFiestaStudio/OlympusGoneWild/wiki/ProjectBestPractices#pull-requests -->
 
 ### Description
 
 <!-- Describe the purpose of this pull request.
 Provide a brief summary of the changes and why they are being made. -->
+<!-- If not applicable just leave as N/A. -->
 
 ### Image/Video
 
 <!--- If applicable, include an image/gif/video to help illustrate the changes.  -->
+<!-- If not applicable just leave as N/A. -->
 
 ### Related Issue
 
@@ -17,7 +19,7 @@ Provide a brief summary of the changes and why they are being made. -->
 
 - [ ] No
 - [ ] Yes <!-- ::WARNING:: If your PR has a breaking change, your commit body message MUST include "BREAKING CHANGE" -->
-- [ ] 
+
 <!-- If this PR contains a breaking change, please describe the impact. -->
 
 ### Tests
@@ -38,6 +40,7 @@ Before submitting this pull request, please ensure the following are completed:
 ## Additional Notes
 
 <!-- Any additional information or context that might be helpful for the reviewers. -->
+<!-- If not applicable just leave as N/A. -->
 
 ---
 
