@@ -63,14 +63,17 @@ animations = [{
 script = ExtResource("1_oadh2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(158, 61)
+position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_ufsgy")
 one_way_collision_margin = 0.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(161, 54)
+position = Vector2(3, -18)
 scale = Vector2(2.86364, 3.1875)
 sprite_frames = SubResource("SpriteFrames_lrt3t")
 animation = &"Idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 1)
+zoom = Vector2(0.7, 0.7)
+limit_smoothed = true
