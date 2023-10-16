@@ -5,9 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://3fum8pkyjnfp" path="res://map/tile_map.tscn" id="2_1areo"]
 [ext_resource type="PackedScene" uid="uid://xltm3j142qwi" path="res://menus/pause_menu.tscn" id="3_sns4i"]
 
-[node name="level1" type="Node2D"]
+[node name="level1" type="Node2D" node_paths=PackedStringArray("tilemap")]
 process_mode = 1
 script = ExtResource("1_d3jfb")
+tilemap = NodePath("TileMap")
 
 [node name="TileMap" parent="." instance=ExtResource("2_1areo")]
 
