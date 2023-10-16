@@ -10,10 +10,8 @@ process_mode = 1
 script = ExtResource("1_d3jfb")
 
 [node name="TileMap" parent="." instance=ExtResource("2_1areo")]
-position = Vector2(376, 332)
 
 [node name="Player" parent="." instance=ExtResource("1_lqipx")]
-position = Vector2(-1424, -344)
 
 [node name="PauseMenu" parent="." instance=ExtResource("3_sns4i")]
 process_mode = 3
