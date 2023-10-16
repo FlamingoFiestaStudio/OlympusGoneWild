@@ -4,10 +4,10 @@ extends Node2D
 @onready var camera: Camera2D = get_node("Player/Camera2D")
  
 func _ready():
-	var mapRect = tilemap.get_used_rect()
-	var tileSize = tilemap.tile_set.tile_size
-	camera.limit_left = mapRect.position.x * tileSize.x
-	camera.limit_right = mapRect.end.x * tileSize.x
-	camera.limit_top = mapRect.position.y * tileSize.y
-	camera.limit_bottom = mapRect.end.y * tileSize.y
+	var map_rect = tilemap.get_used_rect()
+	var tile_size = tilemap.tile_set.tile_size
+	camera.limit_left = map_rect.position.x * tile_size.x
+	camera.limit_right = map_rect.end.x * tile_size.x
+	camera.limit_top = map_rect.position.y * tile_size.y
+	camera.limit_bottom = map_rect.end.y * tile_size.y
 	
