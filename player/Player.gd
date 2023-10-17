@@ -10,7 +10,7 @@ func _ready():
 	anim.play("Idle")
 
 
-func _process(delta):
+func _process(_delta):
 	direction = Vector2() #Reset direction
 	
 	if Input.is_action_pressed("right"):
@@ -28,12 +28,13 @@ func _process(delta):
 		direction.y -= 1
 		
 	if direction.length() > 0:
-		direction = direction.normalized() * SPEED
 		anim.play("Running")
 	else:
 		anim.play("Idle")
+		
+	velocity = direction * SPEED
 
 
-func _physics_process(delta):
-	position += direction * delta
+func _physics_process(_delta):
+	move_and_slide()
 	
