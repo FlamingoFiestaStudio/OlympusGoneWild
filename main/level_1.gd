@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var tilemap: TileMap
+@onready var tilemap: TileMap = get_node("TileMap")
 @onready var camera: Camera2D = get_node("Player/Camera2D")
  
 func _ready():
