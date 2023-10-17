@@ -82,7 +82,7 @@ We use the following priority labels to help organize and prioritize tasks:
 
 ## Directory Structure
 
-Here's an overview of the project's directory structure:
+Here's an overview of the project's directory structure (Multiple Directory Structure):
 
 - `/`: Root directory
 - `/entities`: Contains subdirectories for various game entities and characters.
