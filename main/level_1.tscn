@@ -18,12 +18,3 @@ position = Vector2(-700, 0)
 
 [node name="PauseMenu" parent="." instance=ExtResource("3_sns4i")]
 process_mode = 3
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 744.0
-offset_top = 309.0
-offset_right = 744.0
-offset_bottom = 309.0
-grow_horizontal = 1
-grow_vertical = 1
