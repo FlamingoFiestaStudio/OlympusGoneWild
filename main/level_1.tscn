@@ -5,14 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://3fum8pkyjnfp" path="res://map/tile_map.tscn" id="2_1areo"]
 [ext_resource type="PackedScene" uid="uid://xltm3j142qwi" path="res://menus/pause_menu.tscn" id="3_sns4i"]
 
-[node name="level1" type="Node2D" node_paths=PackedStringArray("tilemap")]
+[node name="level1" type="Node2D"]
 process_mode = 1
 script = ExtResource("1_d3jfb")
-tilemap = NodePath("TileMap")
-metadata/_edit_lock_ = true
 
 [node name="TileMap" parent="." instance=ExtResource("2_1areo")]
-position = Vector2(-700, 0)
 
 [node name="Player" parent="." instance=ExtResource("1_lqipx")]
 
