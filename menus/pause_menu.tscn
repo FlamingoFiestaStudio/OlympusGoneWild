@@ -2,52 +2,54 @@
 
 [ext_resource type="Script" path="res://menus/pause_menu.gd" id="1_2350e"]
 
-[node name="PauseMenu" type="Control"]
+[node name="PauseMenu" type="CanvasLayer"]
 process_mode = 2
+
+[node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
 script = ExtResource("1_2350e")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -97.0
-offset_top = -72.0
-offset_right = 153.0
-offset_bottom = 33.0
+offset_left = -35.0
+offset_top = -48.0
+offset_right = 35.0
+offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 5.0
-offset_bottom = -4.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TitleLabel" type="Label" parent="Panel/VBoxContainer"]
+[node name="TitleLabel" type="Label" parent="Control/Panel/VBoxContainer"]
 layout_mode = 2
 text = "Pause"
 horizontal_alignment = 1
 
-[node name="resumeButton" type="Button" parent="Panel/VBoxContainer"]
+[node name="resumeButton" type="Button" parent="Control/Panel/VBoxContainer"]
 layout_mode = 2
 text = "Resume"
 
-[node name="quitButton" type="Button" parent="Panel/VBoxContainer"]
+[node name="quitButton" type="Button" parent="Control/Panel/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
 
-[connection signal="pressed" from="Panel/VBoxContainer/resumeButton" to="." method="_on_resume_button_pressed"]
-[connection signal="pressed" from="Panel/VBoxContainer/quitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="Control/Panel/VBoxContainer/resumeButton" to="Control" method="_on_resume_button_pressed"]
+[connection signal="pressed" from="Control/Panel/VBoxContainer/quitButton" to="Control" method="_on_quit_button_pressed"]
