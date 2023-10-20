@@ -48,8 +48,7 @@ Please follow our [Coding Guidelines/Code Styles](https://github.com/FlamingoFie
 1. Ensure your changes are on a feature branch, not the `main` branch;
 2. Commit your changes with clear and concise messages, [check here commit message convections](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/wiki/ProjectBestPractices#commit-message-convections);
 3. Push your branch to your GitHub fork: `git push origin 123-my-issue-title`, [check here for branch name convention](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/wiki/ProjectBestPractices#branch-naming-convention);
-4. Create a Pull Request (PR) from your branch to the `main` project repository;
-5. [Check here for pull request best practices](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/wiki/ProjectBestPractices#pull-requests);
+4. Create a Pull Request (PR) from your branch to the `main` project repository, [Check here for pull request best practices](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/wiki/ProjectBestPractices#pull-requests);
 6. Our team will review your PR, offer feedback, and merge it if it meets our guidelines;
 
 ## Community and Communication
