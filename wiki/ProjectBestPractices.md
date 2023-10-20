@@ -4,12 +4,59 @@ This page will guide you through setting up the project, provide information on 
 
 - https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html
 - https://docs.godotengine.org/en/stable/tutorials/best_practices/index.html
+- https://github.com/FlamingoFiestaStudio/OlympusGoneWild/blob/master/.github/CONTRIBUTING.md
 
 ## Code Styles
 
+### Naming Conventions
+
+- `_`: Only use the `_` at the beginning of the name variable/function in case it's private or not used;
 - Use `get_node` instead of `$` to get a node from the tree, for example, `@onready var my_node = get_node("MyNode")`, (based: https://github.com/FlamingoFiestaStudio/OlympusGoneWild/pull/26#discussion_r1328143299);
-- Variables names should be in snake_case, example: `var my_variable_name: int = 42`;
+- Variables names should be in `snake_case`, example: `var my_variable_name: int = 42`;
+- Constants: Use `UPPER_CASE_SNAKE_CASE` for constants. (e.g., `const MAX_PLAYERS: int = 5`);
 - Try to implicit all types, for example: `var my_string: string = "My String"`;
+- Functions/Methods: Use `snake_case` for function and method names. (e.g., `_calculate_damage`, `start_game`).
+- Classes: Use `PascalCase` for class names. (e.g., `PlayerCharacter`, `GameManager`);
+- Signals: Use `snake_case` for signal names. (e.g., `position_changed`, `health_depleted`);
+- Node Naming: Prefix node names with their type (e.g., `btnStart` (button), `lblPlayerName` (label)).
+
+### Code Formatting
+
+Example of a if:
+
+```gdscript
+if condition:
+    statement
+else:
+    alternative_statement
+
+```
+
+### Comments
+
+- Inline Comments: Use inline comments to explain complex or non-obvious code.
+- Documentation: Document classes, functions, and methods using proper GDScript-style documentation comments.
+
+```gdscript
+# This is an inline comment.
+# ...
+# Function to calculate player's score.
+#
+# Parameters:
+#   - player: The player whose score is to be calculated.
+#
+# Returns:
+#   - The calculated score.
+func _calculate_score(player):
+    # ...
+```
+
+### Organizing Code
+
+- Imports: Organize your import statements alphabetically and group them by type.
+- Class Structure: Follow Godot's class structure, including `_ready()` and `_process(delta)` functions when necessary.
+- Grouping Functions: Group functions by their purpose and separate them with empty lines.
+- Resource Placement: Organize project resources (e.g., scenes, scripts, textures) into appropriate folders, [check here](#directory-structure);
 
 ## Branch Naming Convention
 
