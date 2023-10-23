@@ -14,5 +14,3 @@ To manage the Godot version for this project, we recommend using the [Godot Vers
 ## Godot Version
 
 This project is compatible with Godot 4.0.4 stable. Make sure you have set up the correct Godot version using the Godot Version Manager as mentioned above.
-
-
