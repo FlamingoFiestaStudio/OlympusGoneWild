@@ -23,11 +23,11 @@ Before you start contributing to Olympus Gone Wild, please make sure you have:
 
 ## Reporting Bugs
 
-If you encounter a bug or unexpected behavior in the game, please check if it has already been reported by searching the [Issues](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/issues). If it hasn't been reported yet, feel free to open a new issue and provide as much detail as possible, including steps to reproduce the issue.
+If you encounter a bug or unexpected behavior in the game, please check if it has already been reported by searching the [Issues](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/issues). If it hasn't been reported yet, feel free to open a new issue (using the Bug Report issue template) and provide as much detail as possible.
 
 ## Requesting Features
 
-Have an idea for a new feature or improvement? We encourage you to discuss it with the community first by opening a [Feature Request](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/issues) issue. This way, you can gather feedback and refine your proposal before investing time in development.
+Have an idea for a new feature or improvement? We encourage you to discuss it with the community first by opening a [Feature Request](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/issues) template issue. This way, you can gather feedback and refine your proposal before investing time in development.
 
 ## Contributing Code
 
