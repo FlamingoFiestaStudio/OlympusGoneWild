@@ -41,6 +41,5 @@ func _control() -> void:
 func _physics_process(_delta) -> void:
 	move_and_slide()
 
-func _on_gun_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vector2) -> void:
+func _on_weapon_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vector2) -> void:
 	emit_signal("shoot", Bullet, _position, _direction)
-	pass

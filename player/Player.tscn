@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://be7nr3dibof6v" path="res://player/sprites/run/player-run-4.png" id="9_pvidn"]
 [ext_resource type="Texture2D" uid="uid://bxmfmgilmmbdb" path="res://player/sprites/run/player-run-5.png" id="10_iacrm"]
 [ext_resource type="Texture2D" uid="uid://csenw0x4vfg0d" path="res://player/sprites/run/player-run-6.png" id="11_0g20g"]
-[ext_resource type="Script" path="res://player/Gun.gd" id="12_adhj6"]
+[ext_resource type="Script" path="res://player/Weapon.gd" id="12_1am0a"]
 [ext_resource type="PackedScene" uid="uid://yiffn8h8k3v4" path="res://bullets/bullet.tscn" id="13_t574q"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ufsgy"]
@@ -84,15 +84,15 @@ limit_right = 2200
 limit_bottom = 2000
 limit_smoothed = true
 
-[node name="Gun" type="Marker2D" parent="."]
-script = ExtResource("12_adhj6")
+[node name="Weapon" type="Marker2D" parent="."]
+script = ExtResource("12_1am0a")
 Bullet = ExtResource("13_t574q")
 
-[node name="Direction" type="Marker2D" parent="Gun"]
+[node name="Direction" type="Marker2D" parent="Weapon"]
 position = Vector2(10, 0)
 
-[node name="Timer" type="Timer" parent="Gun"]
+[node name="Timer" type="Timer" parent="Weapon"]
 wait_time = 0.1
 
-[connection signal="shoot" from="Gun" to="." method="_on_gun_shoot"]
-[connection signal="timeout" from="Gun/Timer" to="Gun" method="_on_timer_timeout"]
+[connection signal="shoot" from="Weapon" to="." method="_on_weapon_shoot"]
+[connection signal="timeout" from="Weapon/Timer" to="Weapon" method="_on_timer_timeout"]
