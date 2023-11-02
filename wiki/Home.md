@@ -14,7 +14,6 @@ This project arises from the team's desire to develop a complete project in orde
 - [Flávio Silva](https://github.com/201flaviosilva) (Developer);
 - [Gabriel Sousa](https://github.com/Gabriel-Sous-a) (Developer/Scrum Master);
 - [Gonçalo Pereira](https://github.com/Goncalo-FP) (Developer);
-- [João Rocha](https://github.com/Rocha1313) (Developer/Transformer);
 - [Leonardo Teixeira](https://github.com/LeoHabs) (Developer/Artist);
 - [Rita Cambey](https://www.instagram.com/ritta_cambey/) (Artist);
 
@@ -23,7 +22,7 @@ This project arises from the team's desire to develop a complete project in orde
 
 | Category       | Tools                                          |
 | -------------- | ---------------------------------------------- |
-| Game Engine/LP | Godot/GDScript (Current version: 4.0.4 Stable) |
+| Game Engine/LP | Godot/GDScript (Current version: 4.2.3 Stable) |
 | Artistic Tools | Aseprite/Procreate/Photoshop                   |
 | VCS            | Git/GitHub                                     |
 | Utils          | Godot Version Manager                          |
