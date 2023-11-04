@@ -13,7 +13,7 @@ Provide a brief summary of the changes and why they are being made. -->
 
 ### Related Issue
 
-**Closes #ISSUE_NUMBER**
+Closes #ISSUE_NUMBER
 
 ### Does this PR introduce a breaking change? ⚠️
 
