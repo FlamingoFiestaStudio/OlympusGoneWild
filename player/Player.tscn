@@ -92,7 +92,6 @@ Bullet = ExtResource("13_t574q")
 position = Vector2(10, 0)
 
 [node name="Timer" type="Timer" parent="Weapon"]
-wait_time = 0.1
 
 [connection signal="shoot" from="Weapon" to="." method="_on_weapon_shoot"]
 [connection signal="timeout" from="Weapon/Timer" to="Weapon" method="_on_timer_timeout"]
