@@ -1,16 +1,20 @@
 extends CharacterBody2D
 
+signal shoot
 
-var direction = Vector2()
 const SPEED = 200
-@onready var anim = get_node("AnimatedSprite2D")
 
+@onready var anim: AnimatedSprite2D = get_node("AnimatedSprite2D")
 
-func _ready():
+var direction: Vector2 = Vector2.ZERO
+
+func _ready() -> void:
 	anim.play("Idle")
 
+func _process(_delta) -> void:
+	_control()
 
-func _process(_delta):
+func _control() -> void:
 	direction = Vector2() #Reset direction
 	
 	if Input.is_action_pressed("right"):
@@ -34,7 +38,8 @@ func _process(_delta):
 		
 	velocity = direction * SPEED
 
-
-func _physics_process(_delta):
+func _physics_process(_delta) -> void:
 	move_and_slide()
-	
+
+func _on_weapon_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vector2) -> void:
+	emit_signal("shoot", Bullet, _position, _direction)
