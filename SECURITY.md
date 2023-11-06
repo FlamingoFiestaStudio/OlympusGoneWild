@@ -8,7 +8,7 @@ To report a security vulnerability, please follow these steps:
 
 1. **Create a New Issue**: Go to the [Issues](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/issues) tab of our GitHub repository and click "New Issue";
 
-2. **Use the Security Vulnerability Template**: To ensure the proper evaluation of the issue, use the provided "Security Vulnerability Report" template when creating the issue;
+2. **Use the Security Vulnerability Template**: To ensure the proper evaluation of the issue, use the provided ["Report a security vulnerability"](https://github.com/FlamingoFiestaStudio/OlympusGoneWild/security/advisories/new) template when creating the issue;
 
 3. **Provide Details**: Be sure to provide as much information as possible, including a description of the vulnerability, steps to reproduce it, and any relevant code or configurations;
 
