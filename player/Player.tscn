@@ -88,9 +88,6 @@ limit_smoothed = true
 script = ExtResource("12_1am0a")
 Bullet = ExtResource("13_t574q")
 
-[node name="Direction" type="Marker2D" parent="Weapon"]
-position = Vector2(10, 0)
-
 [node name="Timer" type="Timer" parent="Weapon"]
 
 [connection signal="shoot" from="Weapon" to="." method="_on_weapon_shoot"]

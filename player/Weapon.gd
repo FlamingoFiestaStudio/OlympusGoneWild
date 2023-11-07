@@ -5,7 +5,6 @@ signal shoot
 @export var Bullet: PackedScene
 
 @onready var weapon: Marker2D = get_node(".")
-@onready var direction: Marker2D = get_node("Direction")
 @onready var timer: Timer = get_node("Timer")
 
 var can_shoot: bool = true
