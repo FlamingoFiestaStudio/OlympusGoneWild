@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://8w2b0pmtfhaa"]
+
+[ext_resource type="Texture2D" uid="uid://dgx1fa7be25yv" path="res://player/sprites/idle/player-idle-1.png" id="1_x3bva"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ncggp"]
+
+[node name="Enemy" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_x3bva")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 4)
+shape = SubResource("CapsuleShape2D_ncggp")
+one_way_collision_margin = 0.0

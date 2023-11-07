@@ -16,4 +16,9 @@ script = ExtResource("1_d3jfb")
 [node name="PauseMenu" parent="." instance=ExtResource("3_sns4i")]
 process_mode = 3
 
+[node name="EnemySpawnerTimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
 [connection signal="shoot" from="Player" to="." method="_on_player_shoot"]
+[connection signal="timeout" from="EnemySpawnerTimer" to="." method="_on_enemy_spawner_timer_timeout"]
