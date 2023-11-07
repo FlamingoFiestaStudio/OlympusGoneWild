@@ -6,7 +6,7 @@ extends Node2D
 @onready var tile_set: TileSet
  
 func _ready() -> void:
-  tile_set = tilemap.tile_set
+  	tile_set = tilemap.tile_set
 	var map_rect = tilemap.get_used_rect()
 	var tile_size = tilemap.tile_set.tile_size
 	camera.limit_left = map_rect.position.x * tile_size.x
