@@ -5,17 +5,17 @@
 [ext_resource type="Texture2D" uid="uid://bk2uloevvydaw" path="res://player/sprites/idle/player-idle-2.png" id="3_uro37"]
 [ext_resource type="Texture2D" uid="uid://cdf2cbe6ew0hy" path="res://player/sprites/idle/player-idle-3.png" id="4_s11m5"]
 [ext_resource type="Texture2D" uid="uid://dqtbf2c0jp6gx" path="res://player/sprites/idle/player-idle-4.png" id="5_xcu30"]
-[ext_resource type="Texture2D" uid="uid://sg8ov3rbe46e" path="res://player/sprites/run/player-run-1.png" id="6_agn2c"]
-[ext_resource type="Texture2D" uid="uid://c2l1di7xnif5o" path="res://player/sprites/run/player-run-2.png" id="7_3f4g5"]
-[ext_resource type="Texture2D" uid="uid://dfg2a3i50v5wf" path="res://player/sprites/run/player-run-3.png" id="8_1fdow"]
-[ext_resource type="Texture2D" uid="uid://be7nr3dibof6v" path="res://player/sprites/run/player-run-4.png" id="9_pvidn"]
-[ext_resource type="Texture2D" uid="uid://bxmfmgilmmbdb" path="res://player/sprites/run/player-run-5.png" id="10_iacrm"]
-[ext_resource type="Texture2D" uid="uid://csenw0x4vfg0d" path="res://player/sprites/run/player-run-6.png" id="11_0g20g"]
+[ext_resource type="Texture2D" uid="uid://cxrptngfw3wax" path="res://player/sprites/run/ApolloRunning1.png" id="6_c0b6n"]
+[ext_resource type="Texture2D" uid="uid://bfl68arx52s0k" path="res://player/sprites/run/ApolloRunning2.png" id="7_0qbrl"]
+[ext_resource type="Texture2D" uid="uid://cvk6yloy2cf4e" path="res://player/sprites/run/ApolloRunning3.png" id="8_pi1uk"]
+[ext_resource type="Texture2D" uid="uid://b38660iv3u4kd" path="res://player/sprites/run/ApolloRunning4.png" id="9_sayxa"]
+[ext_resource type="Texture2D" uid="uid://ou46s13csdq8" path="res://player/sprites/run/ApolloRunning5.png" id="10_bd45p"]
+[ext_resource type="Texture2D" uid="uid://du1ln5bf7pbun" path="res://player/sprites/run/ApolloRunning6.png" id="11_cxi84"]
 [ext_resource type="Script" path="res://player/Weapon.gd" id="12_1am0a"]
 [ext_resource type="PackedScene" uid="uid://yiffn8h8k3v4" path="res://bullets/bullet.tscn" id="13_t574q"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ufsgy"]
-radius = 29.0
+radius = 22.0
 height = 100.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lrt3t"]
@@ -39,41 +39,41 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_agn2c")
+"texture": ExtResource("6_c0b6n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_3f4g5")
+"texture": ExtResource("7_0qbrl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_1fdow")
+"texture": ExtResource("8_pi1uk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_pvidn")
+"texture": ExtResource("9_sayxa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_iacrm")
+"texture": ExtResource("10_bd45p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_0g20g")
+"texture": ExtResource("11_cxi84")
 }],
 "loop": true,
 "name": &"Running",
-"speed": 5.0
+"speed": 12.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_oadh2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -7)
+position = Vector2(0, 10)
 shape = SubResource("CapsuleShape2D_ufsgy")
 one_way_collision_margin = 0.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(3, -18)
-scale = Vector2(2.86364, 3.1875)
+scale = Vector2(2.06179, 2.29497)
 sprite_frames = SubResource("SpriteFrames_lrt3t")
-animation = &"Idle"
+animation = &"Running"
+frame_progress = 0.457547
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 1)

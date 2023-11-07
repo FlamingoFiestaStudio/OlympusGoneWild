@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sg8ov3rbe46e"
-path="res://.godot/imported/player-run-1.png-aa74418700664ec592be0796b5a3ea9d.ctex"
+uid="uid://bfl68arx52s0k"
+path="res://.godot/imported/ApolloRunning2.png-ad7d85fb28bb5306e5d1be8b445bde8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/sprites/run/player-run-1.png"
-dest_files=["res://.godot/imported/player-run-1.png-aa74418700664ec592be0796b5a3ea9d.ctex"]
+source_file="res://player/sprites/run/ApolloRunning2.png"
+dest_files=["res://.godot/imported/ApolloRunning2.png-ad7d85fb28bb5306e5d1be8b445bde8d.ctex"]
 
 [params]
 
