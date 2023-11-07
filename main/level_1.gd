@@ -1,11 +1,11 @@
 extends Node2D
 
+@export var enemy_buffer_spawn = 30
+
 @onready var tilemap: TileMap = get_node("TileMap")
 @onready var camera: Camera2D = get_node("Player/Camera2D")
 @onready var enemy_scene: PackedScene = preload("res://enemies/Enemy.tscn")
 @onready var tile_set: TileSet
-
-var bufferOfMapBorderAndEnemySpawn = 30
  
 func _ready() -> void:
 	tile_set = tilemap.tile_set
@@ -20,8 +20,8 @@ func _on_enemy_spawner_timer_timeout() -> void:
 	var enemy_instance = enemy_scene.instantiate()
 	var tile_size = tile_set.tile_size
 	var map_rect = tilemap.get_used_rect()
-	var spawn_area_x = (map_rect.size.x * tile_size.x) / 2 + bufferOfMapBorderAndEnemySpawn
-	var spawn_area_y = (map_rect.size.y * tile_size.y) / 2 + bufferOfMapBorderAndEnemySpawn
+	var spawn_area_x = (map_rect.size.x * tile_size.x) / 2 + enemy_buffer_spawn
+	var spawn_area_y = (map_rect.size.y * tile_size.y) / 2 + enemy_buffer_spawn
 	var possible_spawn_x = [spawn_area_x, -spawn_area_x]
 	var possible_spawn_y = [spawn_area_y, -spawn_area_y]
 	
