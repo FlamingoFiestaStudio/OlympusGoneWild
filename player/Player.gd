@@ -40,6 +40,5 @@ func _on_weapon_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vecto
 	anim.play("Attacking")
 	emit_signal("shoot", Bullet, _position, _direction)
 
-
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if anim.animation == "Attacking": anim.play("Idle")

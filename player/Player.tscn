@@ -1,24 +1,24 @@
 [gd_scene load_steps=22 format=3 uid="uid://ey7qekfsbkai"]
 
 [ext_resource type="Script" path="res://player/Player.gd" id="1_oadh2"]
-[ext_resource type="Texture2D" uid="uid://crlai8ehwtbsy" path="res://player/sprites/attacking/AttackingAnimation1.png" id="2_g4q0f"]
-[ext_resource type="Texture2D" uid="uid://dq5fkk3ppuhre" path="res://player/sprites/attacking/AttackingAnimation2.png" id="3_b04pd"]
-[ext_resource type="Texture2D" uid="uid://bi4gbhq0bujg4" path="res://player/sprites/attacking/AttackingAnimation3.png" id="4_ruky2"]
-[ext_resource type="Texture2D" uid="uid://dh5ucbw24g5i2" path="res://player/sprites/attacking/AttackingAnimation4.png" id="5_28n55"]
-[ext_resource type="Texture2D" uid="uid://cxrptngfw3wax" path="res://player/sprites/run/ApolloRunning1.png" id="6_c0b6n"]
-[ext_resource type="Texture2D" uid="uid://cxedit13m1f1y" path="res://player/sprites/attacking/AttackingAnimation5.png" id="6_q5j6g"]
-[ext_resource type="Texture2D" uid="uid://bfl68arx52s0k" path="res://player/sprites/run/ApolloRunning2.png" id="7_0qbrl"]
+[ext_resource type="Texture2D" uid="uid://crlai8ehwtbsy" path="res://player/sprites/attacking/Attacking1.png" id="2_o3bd2"]
+[ext_resource type="Texture2D" uid="uid://dq5fkk3ppuhre" path="res://player/sprites/attacking/Attacking2.png" id="3_eefgo"]
+[ext_resource type="Texture2D" uid="uid://bi4gbhq0bujg4" path="res://player/sprites/attacking/Attacking3.png" id="4_pcc0s"]
+[ext_resource type="Texture2D" uid="uid://dh5ucbw24g5i2" path="res://player/sprites/attacking/Attacking4.png" id="5_kwuyn"]
+[ext_resource type="Texture2D" uid="uid://cxedit13m1f1y" path="res://player/sprites/attacking/Attacking5.png" id="6_n8n2v"]
 [ext_resource type="Texture2D" uid="uid://bkrjps4cujw0r" path="res://player/sprites/idle/Idle1.png" id="7_d2toc"]
 [ext_resource type="Texture2D" uid="uid://4ha6xnlx45a2" path="res://player/sprites/idle/Idle2.png" id="8_527a0"]
-[ext_resource type="Texture2D" uid="uid://cvk6yloy2cf4e" path="res://player/sprites/run/ApolloRunning3.png" id="8_pi1uk"]
 [ext_resource type="Texture2D" uid="uid://bwketf0l8tkik" path="res://player/sprites/idle/Idle3.png" id="9_lrmdw"]
-[ext_resource type="Texture2D" uid="uid://b38660iv3u4kd" path="res://player/sprites/run/ApolloRunning4.png" id="9_sayxa"]
-[ext_resource type="Texture2D" uid="uid://ou46s13csdq8" path="res://player/sprites/run/ApolloRunning5.png" id="10_bd45p"]
 [ext_resource type="Texture2D" uid="uid://b553fnn54vvp1" path="res://player/sprites/idle/Idle4.png" id="10_vu1fj"]
-[ext_resource type="Texture2D" uid="uid://du1ln5bf7pbun" path="res://player/sprites/run/ApolloRunning6.png" id="11_cxi84"]
 [ext_resource type="Texture2D" uid="uid://bc2twn1tdqx7o" path="res://player/sprites/idle/Idle5.png" id="11_dn2gw"]
 [ext_resource type="Script" path="res://player/Weapon.gd" id="12_1am0a"]
+[ext_resource type="Texture2D" uid="uid://cxrptngfw3wax" path="res://player/sprites/run/Running1.png" id="12_53kcl"]
+[ext_resource type="Texture2D" uid="uid://bfl68arx52s0k" path="res://player/sprites/run/Running2.png" id="13_535ro"]
 [ext_resource type="PackedScene" uid="uid://yiffn8h8k3v4" path="res://bullets/bullet.tscn" id="13_t574q"]
+[ext_resource type="Texture2D" uid="uid://cvk6yloy2cf4e" path="res://player/sprites/run/Running3.png" id="14_hjal1"]
+[ext_resource type="Texture2D" uid="uid://b38660iv3u4kd" path="res://player/sprites/run/Running4.png" id="15_1m5m6"]
+[ext_resource type="Texture2D" uid="uid://ou46s13csdq8" path="res://player/sprites/run/Running5.png" id="16_pqqq2"]
+[ext_resource type="Texture2D" uid="uid://du1ln5bf7pbun" path="res://player/sprites/run/Running6.png" id="17_p8mue"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ufsgy"]
 radius = 22.0
@@ -28,19 +28,19 @@ height = 100.0
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_g4q0f")
+"texture": ExtResource("2_o3bd2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_b04pd")
+"texture": ExtResource("3_eefgo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_ruky2")
+"texture": ExtResource("4_pcc0s")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_28n55")
+"texture": ExtResource("5_kwuyn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_q5j6g")
+"texture": ExtResource("6_n8n2v")
 }],
 "loop": false,
 "name": &"Attacking",
@@ -68,22 +68,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_c0b6n")
+"texture": ExtResource("12_53kcl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_0qbrl")
+"texture": ExtResource("13_535ro")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_pi1uk")
+"texture": ExtResource("14_hjal1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_sayxa")
+"texture": ExtResource("15_1m5m6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_bd45p")
+"texture": ExtResource("16_pqqq2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_cxi84")
+"texture": ExtResource("17_p8mue")
 }],
 "loop": true,
 "name": &"Running",

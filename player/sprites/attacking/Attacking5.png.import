@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du1ln5bf7pbun"
-path="res://.godot/imported/ApolloRunning6.png-06c7cf8fe6e6fa11bc790e4908ce6623.ctex"
+uid="uid://cxedit13m1f1y"
+path="res://.godot/imported/Attacking5.png-312e26f0631d35d954c76774202e05dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/sprites/run/ApolloRunning6.png"
-dest_files=["res://.godot/imported/ApolloRunning6.png-06c7cf8fe6e6fa11bc790e4908ce6623.ctex"]
+source_file="res://player/sprites/attacking/Attacking5.png"
+dest_files=["res://.godot/imported/Attacking5.png-312e26f0631d35d954c76774202e05dd.ctex"]
 
 [params]
 

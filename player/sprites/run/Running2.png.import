@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfl68arx52s0k"
-path="res://.godot/imported/ApolloRunning2.png-ad7d85fb28bb5306e5d1be8b445bde8d.ctex"
+path="res://.godot/imported/Running2.png-c5fce308441c068ad0320443d70cebc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/sprites/run/ApolloRunning2.png"
-dest_files=["res://.godot/imported/ApolloRunning2.png-ad7d85fb28bb5306e5d1be8b445bde8d.ctex"]
+source_file="res://player/sprites/run/Running2.png"
+dest_files=["res://.godot/imported/Running2.png-c5fce308441c068ad0320443d70cebc3.ctex"]
 
 [params]
 
