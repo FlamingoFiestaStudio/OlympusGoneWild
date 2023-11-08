@@ -8,9 +8,6 @@ const SPEED = 200
 
 var direction: Vector2 = Vector2.ZERO
 
-func _ready() -> void:
-	anim.play("Idle")
-
 func _process(_delta) -> void:
 	_control()
 
@@ -31,15 +28,18 @@ func _control() -> void:
 	if Input.is_action_pressed("up"):
 		direction.y -= 1
 		
-	if direction.length() > 0:
-		anim.play("Running")
-	else:
-		anim.play("Idle")
-		
+	if not anim.animation == "Attacking":
+		anim.play("Running" if direction.length() > 0 else "Idle")
+	
 	velocity = direction * SPEED
 
 func _physics_process(_delta) -> void:
 	move_and_slide()
 
 func _on_weapon_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vector2) -> void:
+	anim.play("Attacking")
 	emit_signal("shoot", Bullet, _position, _direction)
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	if anim.animation == "Attacking": anim.play("Idle")
