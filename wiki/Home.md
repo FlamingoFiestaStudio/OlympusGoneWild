@@ -22,7 +22,7 @@ This project arises from the team's desire to develop a complete project in orde
 
 | Category       | Tools                                          |
 | -------------- | ---------------------------------------------- |
-| Game Engine/LP | Godot/GDScript (Current version: 4.2.3 Stable) |
+| Game Engine/LP | Godot/GDScript (Current version: 4.1.3 Stable) |
 | Artistic Tools | Aseprite/Procreate/Photoshop                   |
 | VCS            | Git/GitHub                                     |
 | Utils          | Godot Version Manager                          |
