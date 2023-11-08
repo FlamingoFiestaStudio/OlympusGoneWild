@@ -48,9 +48,9 @@ The UI
  art of the game it's all in Pixel Art.
 
 ### Start Menu
-![UI Start Menu](./images/UIStartMenu.png)
+![UI Start Menu](./images/UIMainMenu.jpeg)
 ### Pause Menu
-![UI Pause Menu](./images/UIPauseMenu.png)
+![UI Pause Menu](./images/UIPauseMenu.jpeg)
 
 ### Options Menu
 ![UI Options Menu](./images/UIOptionsMenu.png)
