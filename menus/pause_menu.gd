@@ -17,9 +17,10 @@ func _input(event : InputEvent):
 	if(event.is_action_pressed("ui_cancel")):
 		game_paused = !game_paused
 
-func _on_resume_button_pressed():
+func _on_resume_btn_pressed():
 	game_paused = false
 
-func _on_quit_button_pressed():
+
+func _on_quit_btn_pressed():
 	game_paused = false
 	get_tree().change_scene_to_file("res://menus/menu.tscn")
