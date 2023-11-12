@@ -43,3 +43,6 @@ func _physics_process(_delta) -> void:
 
 func _on_weapon_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vector2) -> void:
 	emit_signal("shoot", Bullet, _position, _direction)
+
+func get_player_position() -> Vector2:
+	return global_position
