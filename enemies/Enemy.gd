@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const SPEED = 100
-var player
+var player: Player
 
 func _physics_process(_delta) -> void:
 	if player:
