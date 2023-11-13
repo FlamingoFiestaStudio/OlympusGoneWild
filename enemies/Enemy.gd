@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 100
-var player: CharacterBody2D
+const SPEED: int = 100
+var player: Player
 
 func _physics_process(_delta) -> void:
 	if player:
@@ -10,5 +10,5 @@ func _physics_process(_delta) -> void:
 		
 		move_and_slide()
 
-func initialize_enemy(target_player: CharacterBody2D) -> void:
+func initialize_enemy(target_player: Player) -> void:
 	player = target_player

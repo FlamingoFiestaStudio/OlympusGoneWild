@@ -20,7 +20,7 @@ func _ready() -> void:
 	camera.limit_bottom = map_rect.end.y * tile_size.y
 
 func _on_enemy_spawner_timer_timeout() -> void:
-	var enemy_instance = enemy_scene.instantiate()
+	var new_enemy = enemy_scene.instantiate()
 	var tile_size = tile_set.tile_size
 	var map_rect = tile_map.get_used_rect()
 	var spawn_area_x = (map_rect.size.x * tile_size.x) / 2 + enemy_buffer_spawn_default
@@ -42,10 +42,10 @@ func _on_enemy_spawner_timer_timeout() -> void:
 	elif random_y == spawn_area_y:
 		random_y += enemy_buffer_spawn_positive
 
-	enemy_instance.position = Vector2(random_x, random_y)
-	add_child(enemy_instance)
+	new_enemy.position = Vector2(random_x, random_y)
+	add_child(new_enemy)
 	
-	enemy_instance.call_deferred("initialize_enemy", player)
+	new_enemy.call_deferred("initialize_enemy", player)
 
 func _on_player_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vector2) -> void:
 	var new_bullet = Bullet.instantiate()
