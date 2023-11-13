@@ -6,8 +6,8 @@ extends Node2D
 @onready var camera: Camera2D = get_node("Player/Camera2D")
 @onready var enemy_scene: PackedScene = preload("res://enemies/Enemy.tscn")
 @onready var tile_set: TileSet
-@onready var player = $Player
-@onready var enemy = $Enemy
+@onready var player = get_node("Player")
+@onready var enemy = get_node("Enemy")
  
 func _ready() -> void:
 	tile_set = tile_map.tile_set
