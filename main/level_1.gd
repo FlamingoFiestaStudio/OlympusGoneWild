@@ -44,7 +44,7 @@ func _on_enemy_spawner_timer_timeout() -> void:
 	enemy_instance.position = Vector2(random_x, random_y)
 	add_child(enemy_instance)
 	
-	enemy_instance.initialize_enemy(player)
+	new_enemy.call_deferred("initialize_enemy", player)
 
 func _on_player_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vector2) -> void:
 	var new_bullet = Bullet.instantiate()
