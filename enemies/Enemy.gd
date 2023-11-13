@@ -10,5 +10,5 @@ func _physics_process(_delta) -> void:
 		
 		move_and_slide()
 
-func initialize_enemy(target_player):
+func initialize_enemy(target_player: Player) -> void:
 	player = target_player
