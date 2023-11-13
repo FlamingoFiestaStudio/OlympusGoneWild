@@ -10,7 +10,12 @@ The general basis of the game's style is Ancient Greece and pop representations 
 The player character only moves sideways, even when moving upwards it appears sideways. It has animations for stopping, running and attacking.
 In order to highlight the player's heroism, the character Apollo has several details in gold and an athletic physique. This one has a weapon, a kind of “pulse bow” that shoots energy/fire arrows in individual shots.
 
-![Player Image](./images/Player.png)
+### Idle
+![Player Idle](./images/PlayerIdle.gif)
+### Run
+![Player Run](./images/PlayerRun.gif)
+### Attacking
+![Player Attacking](./images/PlayerAttacking.gif)
 
 ## The Enemies
 
@@ -18,9 +23,16 @@ The enemies are various creatures from Asphodel and Tartarus, and therefore, the
 
 These enemies will have running, attacking and dying animations. They will also always be presented in profile. In order to convey a feeling of “malignancy”, they are based on darker and less contrasting tones.
 
-![Enemy 1](./images/Enemy1.jpeg)
+### Skeleton Enemy
 
-![Enemy 2](./images/Enemy2.jpeg)
+#### Run
+![Enemy Skeleton Running](./images/EnemySkeletonRunning.gif)
+#### Attacking
+![Enemy Skeleton Attacking](./images/EnemySkeletonAttacking.gif)
+#### Hit
+![Enemy Skeleton Hit](./images/EnemySkeletonHit.gif)
+#### Attacking
+![Enemy Skeleton Death](./images/EnemySkeletonDeath.gif)
 
 ## The environment
 
@@ -32,4 +44,18 @@ The map will be a wide square and will not have any colliding objects. The squar
 
 ## UI
 
-Mainly in pixel art.
+The UI
+ art of the game it's all in Pixel Art.
+
+### Start Menu
+![UI Start Menu](./images/UIMainMenu.jpeg)
+### Pause Menu
+![UI Pause Menu](./images/UIPauseMenu.jpeg)
+
+### Options Menu
+![UI Options Menu](./images/UIOptionsMenu.png)
+
+#### Options Menu - Screen Menu
+![UI Options Menu - Screen Menu](./images/UIOptionsScreenMenu.png)
+#### Options Menu - Sound Menu
+![UI Options Menu - Sound Menu](./images/UIOptionsSoundMenu.png)
