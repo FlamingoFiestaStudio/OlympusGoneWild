@@ -1,83 +1,110 @@
-[gd_scene load_steps=16 format=3 uid="uid://ey7qekfsbkai"]
+[gd_scene load_steps=22 format=3 uid="uid://ey7qekfsbkai"]
 
 [ext_resource type="Script" path="res://player/Player.gd" id="1_oadh2"]
-[ext_resource type="Texture2D" uid="uid://dgx1fa7be25yv" path="res://player/sprites/idle/player-idle-1.png" id="2_bmpiy"]
-[ext_resource type="Texture2D" uid="uid://bk2uloevvydaw" path="res://player/sprites/idle/player-idle-2.png" id="3_uro37"]
-[ext_resource type="Texture2D" uid="uid://cdf2cbe6ew0hy" path="res://player/sprites/idle/player-idle-3.png" id="4_s11m5"]
-[ext_resource type="Texture2D" uid="uid://dqtbf2c0jp6gx" path="res://player/sprites/idle/player-idle-4.png" id="5_xcu30"]
-[ext_resource type="Texture2D" uid="uid://sg8ov3rbe46e" path="res://player/sprites/run/player-run-1.png" id="6_agn2c"]
-[ext_resource type="Texture2D" uid="uid://c2l1di7xnif5o" path="res://player/sprites/run/player-run-2.png" id="7_3f4g5"]
-[ext_resource type="Texture2D" uid="uid://dfg2a3i50v5wf" path="res://player/sprites/run/player-run-3.png" id="8_1fdow"]
-[ext_resource type="Texture2D" uid="uid://be7nr3dibof6v" path="res://player/sprites/run/player-run-4.png" id="9_pvidn"]
-[ext_resource type="Texture2D" uid="uid://bxmfmgilmmbdb" path="res://player/sprites/run/player-run-5.png" id="10_iacrm"]
-[ext_resource type="Texture2D" uid="uid://csenw0x4vfg0d" path="res://player/sprites/run/player-run-6.png" id="11_0g20g"]
+[ext_resource type="Texture2D" uid="uid://crlai8ehwtbsy" path="res://player/sprites/attacking/Attacking1.png" id="2_o3bd2"]
+[ext_resource type="Texture2D" uid="uid://dq5fkk3ppuhre" path="res://player/sprites/attacking/Attacking2.png" id="3_eefgo"]
+[ext_resource type="Texture2D" uid="uid://bi4gbhq0bujg4" path="res://player/sprites/attacking/Attacking3.png" id="4_pcc0s"]
+[ext_resource type="Texture2D" uid="uid://dh5ucbw24g5i2" path="res://player/sprites/attacking/Attacking4.png" id="5_kwuyn"]
+[ext_resource type="Texture2D" uid="uid://cxedit13m1f1y" path="res://player/sprites/attacking/Attacking5.png" id="6_n8n2v"]
+[ext_resource type="Texture2D" uid="uid://bkrjps4cujw0r" path="res://player/sprites/idle/Idle1.png" id="7_d2toc"]
+[ext_resource type="Texture2D" uid="uid://4ha6xnlx45a2" path="res://player/sprites/idle/Idle2.png" id="8_527a0"]
+[ext_resource type="Texture2D" uid="uid://bwketf0l8tkik" path="res://player/sprites/idle/Idle3.png" id="9_lrmdw"]
+[ext_resource type="Texture2D" uid="uid://b553fnn54vvp1" path="res://player/sprites/idle/Idle4.png" id="10_vu1fj"]
+[ext_resource type="Texture2D" uid="uid://bc2twn1tdqx7o" path="res://player/sprites/idle/Idle5.png" id="11_dn2gw"]
 [ext_resource type="Script" path="res://player/Weapon.gd" id="12_1am0a"]
+[ext_resource type="Texture2D" uid="uid://cxrptngfw3wax" path="res://player/sprites/run/Running1.png" id="12_53kcl"]
+[ext_resource type="Texture2D" uid="uid://bfl68arx52s0k" path="res://player/sprites/run/Running2.png" id="13_535ro"]
 [ext_resource type="PackedScene" uid="uid://yiffn8h8k3v4" path="res://bullets/bullet.tscn" id="13_t574q"]
+[ext_resource type="Texture2D" uid="uid://cvk6yloy2cf4e" path="res://player/sprites/run/Running3.png" id="14_hjal1"]
+[ext_resource type="Texture2D" uid="uid://b38660iv3u4kd" path="res://player/sprites/run/Running4.png" id="15_1m5m6"]
+[ext_resource type="Texture2D" uid="uid://ou46s13csdq8" path="res://player/sprites/run/Running5.png" id="16_pqqq2"]
+[ext_resource type="Texture2D" uid="uid://du1ln5bf7pbun" path="res://player/sprites/run/Running6.png" id="17_p8mue"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ufsgy"]
-radius = 29.0
-height = 100.0
+height = 58.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lrt3t"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_bmpiy")
+"texture": ExtResource("2_o3bd2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_uro37")
+"texture": ExtResource("3_eefgo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_s11m5")
+"texture": ExtResource("4_pcc0s")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_xcu30")
+"texture": ExtResource("5_kwuyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_n8n2v")
 }],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
+"loop": false,
+"name": &"Attacking",
+"speed": 16.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_agn2c")
+"texture": ExtResource("7_d2toc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_3f4g5")
+"texture": ExtResource("8_527a0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_1fdow")
+"texture": ExtResource("9_lrmdw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_pvidn")
+"texture": ExtResource("10_vu1fj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_iacrm")
+"texture": ExtResource("11_dn2gw")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_53kcl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_0g20g")
+"texture": ExtResource("13_535ro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hjal1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1m5m6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_pqqq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_p8mue")
 }],
 "loop": true,
 "name": &"Running",
-"speed": 5.0
+"speed": 12.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_oadh2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -7)
+position = Vector2(0, 6)
 shape = SubResource("CapsuleShape2D_ufsgy")
 one_way_collision_margin = 0.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(3, -18)
-scale = Vector2(2.86364, 3.1875)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_lrt3t")
-animation = &"Idle"
+animation = &"Attacking"
+autoplay = "Idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 1)
-zoom = Vector2(0.7, 0.7)
 limit_left = -2400
 limit_top = -2000
 limit_right = 2200
@@ -90,5 +117,6 @@ Bullet = ExtResource("13_t574q")
 
 [node name="Timer" type="Timer" parent="Weapon"]
 
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="shoot" from="Weapon" to="." method="_on_weapon_shoot"]
 [connection signal="timeout" from="Weapon/Timer" to="Weapon" method="_on_timer_timeout"]
