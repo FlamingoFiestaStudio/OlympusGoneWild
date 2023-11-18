@@ -1,8 +1,10 @@
 extends CharacterBody2D
 
+class_name Player
+
 signal shoot
 
-const SPEED = 200
+const SPEED: int = 200
 
 @onready var anim: AnimatedSprite2D = get_node("AnimatedSprite2D")
 
