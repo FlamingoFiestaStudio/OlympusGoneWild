@@ -32,4 +32,3 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 
 func _on_attack_timer_timeout() -> void:
 	player.call_deferred("hit", DAMMAGE)
-	print(player.health)
