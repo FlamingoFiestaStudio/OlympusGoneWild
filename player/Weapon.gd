@@ -9,7 +9,7 @@ signal shoot
 
 var can_shoot: bool = true
 
-func _process(delta) -> void:
+func _process(_delta) -> void:
 	weapon.look_at(get_global_mouse_position())
 	
 	if Input.is_action_pressed("shoot"):
