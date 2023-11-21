@@ -6,9 +6,10 @@ signal shoot
 
 const SPEED: int = 200
 
-@onready var anim: AnimatedSprite2D = get_node("AnimatedSprite2D")
-
 var direction: Vector2 = Vector2.ZERO
+var health: int = 100
+
+@onready var anim: AnimatedSprite2D = get_node("AnimatedSprite2D")
 
 func _process(_delta) -> void:
 	_control()
@@ -44,3 +45,6 @@ func _on_weapon_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vecto
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if anim.animation == "Attacking": anim.play("Idle")
+
+func hit(damage: int) -> void:
+	health -= damage
