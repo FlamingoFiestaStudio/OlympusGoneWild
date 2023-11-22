@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var DAMMAGE: int
+@export var DAMAGE: int
 
 const MAX_SPEED: int = 100
 
@@ -22,7 +22,7 @@ func initialize_enemy(target_player: Player) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		current_speed = 0
-		player.call_deferred("hit", DAMMAGE)
+		player.call_deferred("hit", DAMAGE)
 		AttackTimer.start()
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
@@ -31,4 +31,4 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 		AttackTimer.stop()
 
 func _on_attack_timer_timeout() -> void:
-	player.call_deferred("hit", DAMMAGE)
+	player.call_deferred("hit", DAMAGE)
