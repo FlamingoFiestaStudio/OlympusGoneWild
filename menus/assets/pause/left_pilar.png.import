@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0ft8xqnmxiv1"
-path="res://.godot/imported/pause_sprite_button.png-34b4d2614b143b0c3bbdeed8ed51304e.ctex"
+uid="uid://dpdm3fttlc6du"
+path="res://.godot/imported/left_pilar.png-9c302c8ff7c8c8e4988e63ff693ba38a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://menus/assets/pause/pause_sprite_button.png"
-dest_files=["res://.godot/imported/pause_sprite_button.png-34b4d2614b143b0c3bbdeed8ed51304e.ctex"]
+source_file="res://menus/assets/pause/left_pilar.png"
+dest_files=["res://.godot/imported/left_pilar.png-9c302c8ff7c8c8e4988e63ff693ba38a.ctex"]
 
 [params]
 

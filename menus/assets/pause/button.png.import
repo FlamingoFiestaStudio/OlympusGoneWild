@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct5bnxgb130qq"
-path="res://.godot/imported/pause_sprite_leaf.png-df1414b6d23060df5e7480f900e4c418.ctex"
+uid="uid://c0ft8xqnmxiv1"
+path="res://.godot/imported/button.png-762eb21b64d104c718ea4569a288bb49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://menus/assets/pause/pause_sprite_leaf.png"
-dest_files=["res://.godot/imported/pause_sprite_leaf.png-df1414b6d23060df5e7480f900e4c418.ctex"]
+source_file="res://menus/assets/pause/button.png"
+dest_files=["res://.godot/imported/button.png-762eb21b64d104c718ea4569a288bb49.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpdm3fttlc6du"
-path="res://.godot/imported/pause_sprite_pilar.png-965b56ff014b80305337e50cf60554ea.ctex"
+uid="uid://b2vkukiyggvdt"
+path="res://.godot/imported/right_pilar.png-43d4904032eb9452210fac6ebbdd4dd2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://menus/assets/pause/pause_sprite_pilar.png"
-dest_files=["res://.godot/imported/pause_sprite_pilar.png-965b56ff014b80305337e50cf60554ea.ctex"]
+source_file="res://menus/assets/pause/right_pilar.png"
+dest_files=["res://.godot/imported/right_pilar.png-43d4904032eb9452210fac6ebbdd4dd2.ctex"]
 
 [params]
 

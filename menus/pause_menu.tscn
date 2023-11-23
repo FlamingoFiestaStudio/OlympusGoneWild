@@ -1,13 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://xltm3j142qwi"]
+[gd_scene load_steps=9 format=3 uid="uid://xltm3j142qwi"]
 
 [ext_resource type="Script" path="res://menus/pause_menu.gd" id="1_2350e"]
-[ext_resource type="Texture2D" uid="uid://jiygda8ahxkb" path="res://menus/assets/pause/pause_sprite_bg.png" id="2_u5yd6"]
-[ext_resource type="Texture2D" uid="uid://ct5bnxgb130qq" path="res://menus/assets/pause/pause_sprite_leaf.png" id="3_s0hkq"]
-[ext_resource type="Texture2D" uid="uid://bddjypriy5cac" path="res://menus/assets/pause/pause_sprite_title.png" id="4_1d2sc"]
-[ext_resource type="Texture2D" uid="uid://bv3hlq1bcj5vd" path="res://menus/assets/pause/pause_sprite_leaf2.png" id="5_fpmlv"]
-[ext_resource type="Texture2D" uid="uid://dpdm3fttlc6du" path="res://menus/assets/pause/pause_sprite_pilar.png" id="6_jjd06"]
-[ext_resource type="Texture2D" uid="uid://c0ft8xqnmxiv1" path="res://menus/assets/pause/pause_sprite_button.png" id="7_hy4ya"]
-[ext_resource type="Texture2D" uid="uid://b2vkukiyggvdt" path="res://menus/assets/pause/pause_sprite_pilar2.png" id="8_1tscp"]
+[ext_resource type="Texture2D" uid="uid://jiygda8ahxkb" path="res://menus/assets/pause/background.png" id="2_jfkwx"]
+[ext_resource type="Texture2D" uid="uid://ct5bnxgb130qq" path="res://menus/assets/pause/leaf.png" id="3_d86os"]
+[ext_resource type="Texture2D" uid="uid://bddjypriy5cac" path="res://menus/assets/pause/title.png" id="4_y7ecm"]
+[ext_resource type="Texture2D" uid="uid://dpdm3fttlc6du" path="res://menus/assets/pause/left_pilar.png" id="6_jxpqp"]
+[ext_resource type="Texture2D" uid="uid://c0ft8xqnmxiv1" path="res://menus/assets/pause/button.png" id="7_xk3b2"]
+[ext_resource type="Texture2D" uid="uid://b2vkukiyggvdt" path="res://menus/assets/pause/right_pilar.png" id="8_au754"]
 [ext_resource type="LabelSettings" uid="uid://dagabmhp0spn3" path="res://menus/assets/typography/pause_menu.tres" id="8_tktr4"]
 
 [node name="PauseMenu" type="CanvasLayer"]
@@ -47,7 +46,7 @@ offset_right = 109.0
 offset_bottom = 77.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_u5yd6")
+texture = ExtResource("2_jfkwx")
 
 [node name="menu_container" type="VBoxContainer" parent="Control/Panel"]
 layout_mode = 1
@@ -71,17 +70,18 @@ size_flags_horizontal = 4
 
 [node name="left_leaf" type="TextureRect" parent="Control/Panel/menu_container/title_container"]
 layout_mode = 2
-texture = ExtResource("3_s0hkq")
+texture = ExtResource("3_d86os")
 
 [node name="title" type="TextureRect" parent="Control/Panel/menu_container/title_container"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource("4_1d2sc")
+texture = ExtResource("4_y7ecm")
 
 [node name="right_leaf" type="TextureRect" parent="Control/Panel/menu_container/title_container"]
 layout_mode = 2
-texture = ExtResource("5_fpmlv")
+texture = ExtResource("3_d86os")
+flip_h = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/Panel/menu_container"]
 layout_mode = 2
@@ -90,7 +90,7 @@ alignment = 1
 [node name="left_pillar" type="TextureRect" parent="Control/Panel/menu_container/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
-texture = ExtResource("6_jjd06")
+texture = ExtResource("6_jxpqp")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel/menu_container/HBoxContainer"]
 layout_mode = 2
@@ -102,7 +102,7 @@ alignment = 1
 [node name="resume_btn" type="TextureButton" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 action_mode = 0
-texture_normal = ExtResource("7_hy4ya")
+texture_normal = ExtResource("7_xk3b2")
 stretch_mode = 3
 
 [node name="Label" type="Label" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer/resume_btn"]
@@ -126,7 +126,7 @@ vertical_alignment = 1
 [node name="options_btn" type="TextureButton" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 action_mode = 0
-texture_normal = ExtResource("7_hy4ya")
+texture_normal = ExtResource("7_xk3b2")
 
 [node name="Label" type="Label" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer/options_btn"]
 layout_mode = 1
@@ -149,7 +149,7 @@ vertical_alignment = 1
 [node name="quit_btn" type="TextureButton" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 action_mode = 0
-texture_normal = ExtResource("7_hy4ya")
+texture_normal = ExtResource("7_xk3b2")
 
 [node name="Label" type="Label" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer/quit_btn"]
 layout_mode = 1
@@ -172,7 +172,7 @@ vertical_alignment = 1
 [node name="right_pillar" type="TextureRect" parent="Control/Panel/menu_container/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-texture = ExtResource("8_1tscp")
+texture = ExtResource("8_au754")
 
 [connection signal="pressed" from="Control/Panel/menu_container/HBoxContainer/VBoxContainer/resume_btn" to="Control" method="_on_resume_btn_pressed"]
 [connection signal="pressed" from="Control/Panel/menu_container/HBoxContainer/VBoxContainer/quit_btn" to="Control" method="_on_quit_btn_pressed"]

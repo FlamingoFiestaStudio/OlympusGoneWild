@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2vkukiyggvdt"
-path="res://.godot/imported/pause_sprite_pilar2.png-675e901a706dc4117aff0f6321d0e031.ctex"
+uid="uid://ct5bnxgb130qq"
+path="res://.godot/imported/leaf.png-a3a76d5da8c4510129897bf579f64c88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://menus/assets/pause/pause_sprite_pilar2.png"
-dest_files=["res://.godot/imported/pause_sprite_pilar2.png-675e901a706dc4117aff0f6321d0e031.ctex"]
+source_file="res://menus/assets/pause/leaf.png"
+dest_files=["res://.godot/imported/leaf.png-a3a76d5da8c4510129897bf579f64c88.ctex"]
 
 [params]
 
