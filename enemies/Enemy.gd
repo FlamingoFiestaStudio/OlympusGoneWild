@@ -5,9 +5,21 @@ extends CharacterBody2D
 const MAX_SPEED: int = 100
 
 var current_speed: int = MAX_SPEED
+var health: int = 10
 var player: Player
 
 @onready var AttackTimer: Timer = get_node("AttackTimer")
+
+func initialize_enemy(target_player: Player) -> void:
+	player = target_player
+
+func hit() -> void:
+	health -= GameManager.player_damage
+	if health < 0: _death()
+	
+func _death() -> void:
+	GameManager.player_score += 1
+	queue_free()
 
 func _physics_process(_delta) -> void:
 	if player:
@@ -15,9 +27,6 @@ func _physics_process(_delta) -> void:
 		velocity = direction * current_speed
 		
 		move_and_slide()
-
-func initialize_enemy(target_player: Player) -> void:
-	player = target_player
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
