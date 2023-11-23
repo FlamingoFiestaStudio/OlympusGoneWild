@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://xltm3j142qwi"]
+[gd_scene load_steps=10 format=3 uid="uid://xltm3j142qwi"]
 
 [ext_resource type="Script" path="res://menus/pause_menu.gd" id="1_2350e"]
 [ext_resource type="Texture2D" uid="uid://jiygda8ahxkb" path="res://menus/assets/pause/pause_sprite_bg.png" id="2_u5yd6"]
@@ -8,9 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dpdm3fttlc6du" path="res://menus/assets/pause/pause_sprite_pilar.png" id="6_jjd06"]
 [ext_resource type="Texture2D" uid="uid://c0ft8xqnmxiv1" path="res://menus/assets/pause/pause_sprite_button.png" id="7_hy4ya"]
 [ext_resource type="Texture2D" uid="uid://b2vkukiyggvdt" path="res://menus/assets/pause/pause_sprite_pilar2.png" id="8_1tscp"]
-[ext_resource type="Texture2D" uid="uid://b2e6gcyhjstqh" path="res://menus/assets/pause/resume.png" id="8_73wd6"]
-[ext_resource type="Texture2D" uid="uid://cni3bue61gha" path="res://menus/assets/pause/options.png" id="9_27kjf"]
-[ext_resource type="Texture2D" uid="uid://b00sfob1l3nj2" path="res://menus/assets/pause/quit.png" id="10_vy641"]
+[ext_resource type="LabelSettings" uid="uid://dagabmhp0spn3" path="res://menus/assets/typography/pause_menu.tres" id="8_tktr4"]
 
 [node name="PauseMenu" type="CanvasLayer"]
 process_mode = 2
@@ -107,59 +105,69 @@ action_mode = 0
 texture_normal = ExtResource("7_hy4ya")
 stretch_mode = 3
 
-[node name="TextureRect" type="TextureRect" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer/resume_btn"]
+[node name="Label" type="Label" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer/resume_btn"]
 layout_mode = 1
-anchors_preset = 13
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -28.5
-offset_top = 4.0
-offset_right = 28.5
-offset_bottom = -4.0
+anchor_bottom = 0.5
+offset_left = -27.0
+offset_top = -5.5
+offset_right = 27.0
+offset_bottom = 5.5
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("8_73wd6")
+text = "RESUME"
+label_settings = ExtResource("8_tktr4")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="options_btn" type="TextureButton" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("7_hy4ya")
 
-[node name="TextureRect2" type="TextureRect" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer/options_btn"]
+[node name="Label" type="Label" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer/options_btn"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -28.5
-offset_top = -5.0
-offset_right = 28.5
-offset_bottom = 5.0
+offset_left = -28.0
+offset_top = -5.5
+offset_right = 28.0
+offset_bottom = 5.5
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("9_27kjf")
+text = "OPTIONS"
+label_settings = ExtResource("8_tktr4")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="quit_btn" type="TextureButton" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("7_hy4ya")
 
-[node name="TextureRect3" type="TextureRect" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer/quit_btn"]
+[node name="Label" type="Label" parent="Control/Panel/menu_container/HBoxContainer/VBoxContainer/quit_btn"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -17.0
-offset_top = -5.0
-offset_right = 17.0
-offset_bottom = 5.0
+offset_left = -16.0
+offset_top = -5.5
+offset_right = 16.0
+offset_bottom = 5.5
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("10_vy641")
+text = "EXIT"
+label_settings = ExtResource("8_tktr4")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="right_pillar" type="TextureRect" parent="Control/Panel/menu_container/HBoxContainer"]
 layout_mode = 2

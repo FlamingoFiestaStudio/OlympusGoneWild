@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://dagabmhp0spn3"]
+
+[ext_resource type="FontFile" uid="uid://cpe54f3ajdsat" path="res://menus/assets/typography/PressStart2P-Regular.ttf" id="1_viki1"]
+
+[resource]
+font = ExtResource("1_viki1")
+font_size = 8
+font_color = Color(0.505882, 0.2, 0.0705882, 1)
