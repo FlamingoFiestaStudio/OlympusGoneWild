@@ -18,4 +18,5 @@ func _physics_process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("BulletDestroyer"):
+		if body.is_in_group("Enemy"): body.call_deferred("hit")
 		queue_free()
