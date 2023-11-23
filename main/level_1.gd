@@ -8,6 +8,8 @@ extends Node2D
 @onready var enemy_scene: PackedScene = preload("res://enemies/Enemy.tscn")
 @onready var tile_set: TileSet
 @onready var player = get_node("Player")
+@onready var EnemySpawnerTimer : Timer = get_node("EnemySpawnerTimer")
+@onready var new_enemy: Node
  
 func _ready() -> void:
 	tile_set = tile_map.tile_set
@@ -19,7 +21,7 @@ func _ready() -> void:
 	camera.limit_bottom = map_rect.end.y * tile_size.y
 
 func _on_enemy_spawner_timer_timeout() -> void:
-	var new_enemy = enemy_scene.instantiate()
+	new_enemy = enemy_scene.instantiate()
 	var tile_size = tile_set.tile_size
 	var map_rect = tile_map.get_used_rect()
 	var spawn_area_x = (map_rect.size.x * tile_size.x) / 2 + enemy_buffer_spawn_default
@@ -50,3 +52,14 @@ func _on_player_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vecto
 	var new_bullet = Bullet.instantiate()
 	add_child(new_bullet)
 	new_bullet.call_deferred("start", _position, _direction)
+
+func _on_waves_timer_timeout() -> void:
+	if new_enemy:
+		
+#		for enemy in get_children():
+#			if enemy.has_method("queue_free"):
+#				enemy.queue_free()
+		
+		EnemySpawnerTimer.wait_time *= 0.8
+		new_enemy.DAMAGE *= 1.2
+		print("New DAMAGE:", new_enemy.DAMAGE)
