@@ -22,7 +22,7 @@ func hit() -> void:
 
 func _attack() -> void:
 	player.call_deferred("hit", DAMAGE)
-	anim.play("Death")
+	anim.play("Attack")
 	
 func _death() -> void:
 	anim.play("Death")
@@ -33,7 +33,12 @@ func _death() -> void:
 	get_node("Area2D").queue_free()
 	AttackTimer.queue_free()
 
-func _physics_process(_delta) -> void:
+func _process(_delta: float) -> void:
+	if not is_alive: return
+	var x_direction = (player.global_position - global_position).x
+	anim.flip_h = x_direction <= 0
+
+func _physics_process(_delta: float) -> void:
 	if player and is_alive:
 		var direction = (player.global_position - global_position).normalized()
 		velocity = direction * current_speed
