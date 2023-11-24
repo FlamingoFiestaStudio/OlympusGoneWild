@@ -2,6 +2,7 @@ extends Node
 
 var player_damage: int = 6 : get = _get_player_damage, set = _set_player_damage
 var player_score: int = 0 : get = _get_player_score, set = _set_player_score
+var enemy_damage: int = 5 : get = _get_enemy_damage, set = _set_enemy_damage
 
 # Player Damage
 func _get_player_damage() -> int:
@@ -16,3 +17,10 @@ func _get_player_score() -> int:
 
 func _set_player_score(new_value: int)  -> void:
 	player_score = new_value
+
+# Enemy Damage
+func _get_enemy_damage() -> int:
+	return enemy_damage
+
+func _set_enemy_damage(new_value: int)  -> void:
+	enemy_damage = new_value

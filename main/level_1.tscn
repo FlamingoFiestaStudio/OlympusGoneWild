@@ -17,10 +17,11 @@ script = ExtResource("1_d3jfb")
 process_mode = 3
 
 [node name="EnemySpawnerTimer" type="Timer" parent="."]
+wait_time = 2.0
 autostart = true
 
 [node name="WavesTimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 120.0
 autostart = true
 
 [connection signal="shoot" from="Player" to="." method="_on_player_shoot"]
