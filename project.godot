@@ -14,6 +14,10 @@ config/name="Olympus Gone Wild"
 run/main_scene="res://menus/menu.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 
+[autoload]
+
+GameManager="*res://GameManager.gd"
+
 [display]
 
 window/size/viewport_width=1280
