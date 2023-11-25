@@ -24,6 +24,8 @@ autostart = true
 wait_time = 120.0
 autostart = true
 
+[node name="EnemyContainer" type="Node2D" parent="."]
+
 [connection signal="shoot" from="Player" to="." method="_on_player_shoot"]
 [connection signal="timeout" from="EnemySpawnerTimer" to="." method="_on_enemy_spawner_timer_timeout"]
 [connection signal="timeout" from="WavesTimer" to="." method="_on_waves_timer_timeout"]
