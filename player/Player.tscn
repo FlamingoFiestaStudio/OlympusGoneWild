@@ -89,7 +89,7 @@ animations = [{
 "speed": 12.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["KinematicBody", "Player"]]
 script = ExtResource("1_oadh2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
