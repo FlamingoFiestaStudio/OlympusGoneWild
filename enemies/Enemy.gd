@@ -16,6 +16,8 @@ func initialize_enemy(target_player: Player) -> void:
 func hit() -> void:
 	health -= GameManager.player_damage
 	if health < 0: _death()
+	print("Health: ", health) # Print enemy health
+	print("Score: ", GameManager.player_score) # Print Player Score
 	
 func _death() -> void:
 	GameManager.player_score += 1
