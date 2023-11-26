@@ -8,8 +8,8 @@ extends Node2D
 @onready var enemy_scene: PackedScene = preload("res://enemies/Enemy.tscn")
 @onready var tile_set: TileSet
 @onready var player = get_node("Player")
-@onready var enemy_spawner_timer : Timer = get_node("EnemySpawnerTimer")
-@onready var enemy_container : Node2D = get_node("EnemyContainer")
+@onready var enemy_spawner_timer: Timer = get_node("EnemySpawnerTimer")
+@onready var enemy_container: Node2D = get_node("EnemyContainer")
  
 func _ready() -> void:
 	tile_set = tile_map.tile_set
@@ -55,8 +55,12 @@ func _on_player_shoot(Bullet: PackedScene, _position: Vector2, _direction: Vecto
 
 func _on_waves_timer_timeout() -> void:
 	for child in enemy_container.get_children():
-		if child.has_method("queue_free"):
-			child.queue_free()
-		
-	enemy_spawner_timer.wait_time *= 0.8
-	GameManager._set_enemy_damage(GameManager._get_enemy_damage() * 1.2)
+		child.queue_free()
+	
+	GameManager._set_enemy_damage(GameManager._get_enemy_damage() * GameManager._get_enemy_damage_multiplier())
+	
+	if enemy_spawner_timer.wait_time <= 0.5:
+		enemy_spawner_timer.wait_time = 0.5
+	else:
+		enemy_spawner_timer.wait_time *= GameManager._get_enemy_spawn_multiplier()
+	
