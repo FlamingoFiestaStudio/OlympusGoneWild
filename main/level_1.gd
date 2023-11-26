@@ -18,6 +18,10 @@ func _ready() -> void:
 	camera.limit_top = map_rect.position.y * tile_size.y
 	camera.limit_bottom = map_rect.end.y * tile_size.y
 
+func _process(delta: float) -> void:
+	get_node("player_ui/Control/Panel/VBoxContainer/Health").text = "Health: " + str(GameManager._get_player_health())
+	get_node("player_ui/Control/Panel/VBoxContainer/Damage").text = "Damage: " + str(GameManager._get_player_damage())
+
 func _on_enemy_spawner_timer_timeout() -> void:
 	var new_enemy = enemy_scene.instantiate()
 	var tile_size = tile_set.tile_size

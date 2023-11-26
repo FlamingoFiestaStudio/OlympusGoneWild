@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://drbut2arpvesd"]
+[gd_scene load_steps=6 format=3 uid="uid://drbut2arpvesd"]
 
 [ext_resource type="Script" path="res://main/level_1.gd" id="1_d3jfb"]
 [ext_resource type="PackedScene" uid="uid://ey7qekfsbkai" path="res://player/Player.tscn" id="1_lqipx"]
 [ext_resource type="PackedScene" uid="uid://3fum8pkyjnfp" path="res://map/tile_map.tscn" id="2_1areo"]
 [ext_resource type="PackedScene" uid="uid://xltm3j142qwi" path="res://menus/pause_menu.tscn" id="3_sns4i"]
+[ext_resource type="PackedScene" uid="uid://c8y32oe6sxcaw" path="res://player/player_ui/player_ui.tscn" id="5_n233f"]
 
 [node name="level1" type="Node2D"]
 process_mode = 1
@@ -19,6 +20,8 @@ process_mode = 3
 [node name="EnemySpawnerTimer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
+
+[node name="player_ui" parent="." instance=ExtResource("5_n233f")]
 
 [connection signal="shoot" from="Player" to="." method="_on_player_shoot"]
 [connection signal="timeout" from="EnemySpawnerTimer" to="." method="_on_enemy_spawner_timer_timeout"]
