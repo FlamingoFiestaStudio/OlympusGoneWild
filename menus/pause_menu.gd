@@ -18,6 +18,7 @@ func _input(event : InputEvent):
 		game_paused = !game_paused
 
 func _on_resume_btn_pressed():
+	await get_tree().create_timer(0.1).timeout
 	game_paused = false
 
 
