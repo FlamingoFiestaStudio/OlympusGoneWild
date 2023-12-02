@@ -35,3 +35,7 @@ text = "Health: "
 [node name="Damage" type="Label" parent="Control/Panel/VBoxContainer"]
 layout_mode = 2
 text = "Damage: "
+
+[node name="Score" type="Label" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Score:"

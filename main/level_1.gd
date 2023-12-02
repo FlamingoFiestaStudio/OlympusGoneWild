@@ -22,6 +22,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	player_ui.get_node("Health").text = "Health: " + str(GameManager._get_player_health())
 	player_ui.get_node("Damage").text = "Damage: " + str(GameManager._get_player_damage())
+	player_ui.get_node("Score").text = "Score: " + str(GameManager._get_player_score())
 
 func _on_enemy_spawner_timer_timeout() -> void:
 	var new_enemy = enemy_scene.instantiate()
