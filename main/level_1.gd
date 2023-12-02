@@ -8,6 +8,7 @@ extends Node2D
 @onready var enemy_scene: PackedScene = preload("res://enemies/Enemy.tscn")
 @onready var tile_set: TileSet
 @onready var player = get_node("Player")
+@onready var player_ui = get_node("player_ui/Control/Panel/VBoxContainer")
  
 func _ready() -> void:
 	tile_set = tile_map.tile_set
@@ -19,8 +20,8 @@ func _ready() -> void:
 	camera.limit_bottom = map_rect.end.y * tile_size.y
 
 func _process(delta: float) -> void:
-	get_node("player_ui/Control/Panel/VBoxContainer/Health").text = "Health: " + str(GameManager._get_player_health())
-	get_node("player_ui/Control/Panel/VBoxContainer/Damage").text = "Damage: " + str(GameManager._get_player_damage())
+	player_ui.get_node("Health").text = "Health: " + str(GameManager._get_player_health())
+	player_ui.get_node("Damage").text = "Damage: " + str(GameManager._get_player_damage())
 
 func _on_enemy_spawner_timer_timeout() -> void:
 	var new_enemy = enemy_scene.instantiate()
