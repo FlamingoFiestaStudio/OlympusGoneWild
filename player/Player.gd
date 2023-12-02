@@ -7,7 +7,6 @@ signal shoot
 const SPEED: int = 200
 
 var direction: Vector2 = Vector2.ZERO
-var health: int = 100
 
 @onready var anim: AnimatedSprite2D = get_node("AnimatedSprite2D")
 
@@ -47,4 +46,4 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 	if anim.animation == "Attacking": anim.play("Idle")
 
 func hit(damage: int) -> void:
-	health -= damage
+	GameManager._set_player_health(GameManager._get_player_health() - damage)
