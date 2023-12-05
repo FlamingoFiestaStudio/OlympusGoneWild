@@ -1,7 +1,5 @@
 extends CharacterBody2D
 
-@export var DAMAGE: int
-
 const MAX_SPEED: int = 100
 
 var current_speed: int = MAX_SPEED
@@ -31,7 +29,7 @@ func _physics_process(_delta) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		current_speed = 0
-		player.call_deferred("hit", DAMAGE)
+		player.call_deferred("hit", GameManager.player_damage)
 		AttackTimer.start()
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
@@ -40,4 +38,4 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 		AttackTimer.stop()
 
 func _on_attack_timer_timeout() -> void:
-	player.call_deferred("hit", DAMAGE)
+	player.call_deferred("hit", GameManager.player_damage)
