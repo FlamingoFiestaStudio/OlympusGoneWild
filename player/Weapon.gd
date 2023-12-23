@@ -5,12 +5,11 @@ signal shoot
 @export var Bullet: PackedScene
 
 @onready var weapon: Marker2D = get_node(".")
-@onready var direction: Marker2D = get_node("Direction")
 @onready var timer: Timer = get_node("Timer")
 
 var can_shoot: bool = true
 
-func _process(delta) -> void:
+func _process(_delta) -> void:
 	weapon.look_at(get_global_mouse_position())
 	
 	if Input.is_action_pressed("shoot"):

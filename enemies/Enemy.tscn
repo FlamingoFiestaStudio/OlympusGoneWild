@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://8w2b0pmtfhaa"]
+
+[ext_resource type="Script" path="res://enemies/Enemy.gd" id="1_kx4id"]
+[ext_resource type="Texture2D" uid="uid://bkrjps4cujw0r" path="res://player/sprites/idle/Idle1.png" id="2_kb4mn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ncggp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lpmi8"]
+radius = 20.0
+
+[node name="Enemy" type="CharacterBody2D" groups=["BulletDestroyer", "Enemy", "KinematicBody"]]
+script = ExtResource("1_kx4id")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.862745, 0, 0.0156863, 1)
+position = Vector2(-0.5, 2)
+scale = Vector2(0.78125, 0.708333)
+texture = ExtResource("2_kb4mn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 4)
+shape = SubResource("CapsuleShape2D_ncggp")
+one_way_collision_margin = 0.0
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-1, 4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_lpmi8")
+
+[node name="AttackTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]
